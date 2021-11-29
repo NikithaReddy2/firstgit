@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Students Details</h1>
+    {% csrf_token %}
+    {% for i in lib %}
+     Student USN:{{i.studentUsn}}<br>
+     Student Name:{{i.studentName}}<br>
+     login Time:{{i.loginTime}}<br>
+     <a href="http://127.0.0.1:8000/libupdate/{{i.id}}">Update</a><br><br><br>
+     <a href="http://127.0.0.1:8000/libdelete/{{i.id}}">Delete</a><br><br><br>
+    {% endfor %}
+  </body>
+</html>

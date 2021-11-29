@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Update Page</h1>
+    <form  method="post">
+      {% csrf_token %}
+      Product ID:
+      <input type="number" name="ID" value="{{display.productId}}"><br>
+      Product Name:
+      <input type="text" name="NAME" value="{{display.productName}}"><br>
+      payment:
+      <input type="text" name="Payment" value="{{display.payment}}"><br>
+      address
+      <input type="text" name="ADDRESS" value="{{display.address}}"><br>
+      <input type="submit" name="" value="update">
+    </form>
+  </body>
+</html>

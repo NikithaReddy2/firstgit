@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <form  method="post">
+      {% csrf_token %}
+      Student USN:
+      <input type="text" name="USN" value="{{lib.studentUsn}}">
+      Student Name:
+      <input type="text" name="Name" value="{{lib.studentName}}">
+      Log in Time:
+      <input type="text" name="LOG IN Time" value="{{lib.loginTime}}">
+      <input type="submit" name="" value="Update">
+    </form>
+  </body>
+</html>
